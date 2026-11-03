@@ -5,7 +5,7 @@
   "type": "module",
   "description": "PaperLens —— 学术文献智能检索与推荐系统：手写 BM25 / TF-IDF 向量空间模型 / 混合排序，附离线评测",
   "engines": {
-    "node": ">=20"
+    "node": ">=22"
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",

@@ -1,5 +1,9 @@
 # PaperLens · 学术文献智能检索与推荐系统
 
+![CI](https://github.com/cangjiuxiyue/paperlens/actions/workflows/ci.yml/badge.svg)
+![Node](https://img.shields.io/badge/node-%3E%3D22-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-blue)
+
 一个从零实现的信息检索系统：**手写 BM25、TF-IDF 向量空间模型、多信号混合排序**，不依赖任何 NLP / 向量库，自带 50 篇论文数据集与 19 条带相关性标注的评测查询，可在网页上实时对比三种排序策略的 NDCG / MRR。
 
 > 这不是一个调包 Demo。检索的核心逻辑（分词、倒排索引、打分、融合、评测）全部在 `src/core/` 里手写，每一行都能讲清楚为什么这么写。
