@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PaperLens · 学术文献智能检索与推荐系统</title>
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+<div class="app">
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">PL</div>
+      <div class="brand-text">
+        <h1>PaperLens</h1>
+        <p>学术文献智能检索与推荐系统</p>
+      </div>
+    </div>
+
+    <nav class="tabs" id="tabs">
+      <button class="tab active" data-view="search">检索</button>
+      <button class="tab" data-view="eval">评测看板</button>
+    </nav>
+
+    <div class="pills" id="pills"></div>
+  </header>
+
+  <main>
+    <!-- ============ 检索视图 ============ -->
+    <section class="view" id="view-search">
+      <div class="searchbar">
+        <span class="search-icon">⌕</span>
+        <input id="q" type="text" autocomplete="off" spellcheck="false"
+               placeholder="输入关键词，例如 dense retrieval for question answering" />
+        <button id="go" class="primary">检索</button>
+      </div>
+
+      <div class="toolbar">
+        <div class="chips" id="chips">
+          <span class="chip-label">示例</span>
+          <button class="chip" data-q="dense retrieval for open domain question answering">稠密检索</button>
+          <button class="chip" data-q="real time object detection">实时目标检测</button>
+          <button class="chip" data-q="distributed consensus and replication">分布式共识</button>
+          <button class="chip" data-q="prevent overfitting in deep neural networks">防止过拟合</button>
+          <button class="chip" data-q="注意力机制">中文查询</button>
+        </div>
+        <div class="mode-switch" id="modes">
+          <button data-mode="bm25">BM25</button>
+          <button data-mode="vector">向量空间</button>
+          <button data-mode="hybrid" class="active">混合排序</button>
+        </div>
+      </div>
+
+      <div class="meta" id="meta"></div>
+      <div class="results" id="results">
+        <div class="empty">
+          <p>输入查询开始检索。</p>
+          <p class="muted">三种排序模式可以在右上角切换，结果会实时重排。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 评测视图 ============ -->
+    <section class="view" id="view-eval" hidden>
+      <div class="section-head">
+        <h2>离线评测</h2>
+        <p class="muted">带相关性标注的查询 · 对比三种排序策略 · 指标全部由 <code>src/core/evaluate.ts</code> 手写实现</p>
+      </div>
+      <div class="kpis" id="kpis"></div>
+      <div class="panel">
+        <table class="metric-table" id="metric-table"></table>
+      </div>
+      <div class="panel conclusion" id="conclusion"></div>
+      <div class="panel">
+        <h3>逐条查询表现（NDCG@10）
+          <span class="legend">
+            <i style="background:#ffb86b"></i>BM25
+            <i style="background:#4fd1c5"></i>向量空间
+            <i style="background:#7c9cff"></i>混合排序
+          </span>
+        </h3>
+        <div class="perquery" id="perquery"></div>
+      </div>
+    </section>
+  </main>
+
+  <aside class="drawer" id="drawer" hidden>
+    <button class="drawer-close" id="drawer-close">×</button>
+    <div id="drawer-body"></div>
+  </aside>
+</div>
+<script src="/app.js"></script>
+</body>
+</html>

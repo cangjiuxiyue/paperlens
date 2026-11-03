@@ -1,0 +1,30 @@
+{
+  "name": "paperlens",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "PaperLens —— 学术文献智能检索与推荐系统：手写 BM25 / TF-IDF 向量空间模型 / 混合排序，附离线评测",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "npm run build && node dist/src/server.js",
+    "serve": "node dist/src/server.js",
+    "cli": "node dist/src/cli.js",
+    "eval": "npm run build && node dist/scripts/eval.js",
+    "test": "npm run build && node --test \"dist/test/*.test.js\""
+  },
+  "keywords": [
+    "information-retrieval",
+    "bm25",
+    "tf-idf",
+    "learning-to-rank",
+    "typescript"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "@types/node": "^22.9.0"
+  }
+}

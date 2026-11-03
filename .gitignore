@@ -1,0 +1,16 @@
+# 依赖与构建产物
+node_modules/
+dist/
+
+# 编辑器与系统文件
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 日志与临时文件
+*.log
+.shot*.png
+
+# WorkBuddy 工作区元数据（不入库）
+.workbuddy-ai/

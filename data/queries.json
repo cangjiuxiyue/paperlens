@@ -1,0 +1,97 @@
+[
+  {
+    "id": "q01",
+    "query": "dense retrieval for open domain question answering",
+    "relevance": { "p004": 3, "p005": 2, "p011": 1, "p020": 1 }
+  },
+  {
+    "id": "q02",
+    "query": "how to serve large language models efficiently",
+    "relevance": { "p047": 3, "p048": 2, "p049": 1, "p046": 1 }
+  },
+  {
+    "id": "q03",
+    "query": "real time object detection",
+    "relevance": { "p025": 3, "p027": 2, "p023": 1 }
+  },
+  {
+    "id": "q04",
+    "query": "prevent overfitting in deep neural networks",
+    "relevance": { "p033": 3, "p034": 2, "p036": 1, "p032": 1 }
+  },
+  {
+    "id": "q05",
+    "query": "pretrained word embeddings",
+    "relevance": { "p014": 3, "p015": 2, "p019": 1, "p050": 1 }
+  },
+  {
+    "id": "q06",
+    "query": "distributed consensus and replication",
+    "relevance": { "p044": 3, "p043": 2, "p045": 2, "p042": 1 }
+  },
+  {
+    "id": "q07",
+    "query": "citation ranking on the web graph",
+    "relevance": { "p009": 3, "p008": 1, "p010": 1 }
+  },
+  {
+    "id": "q08",
+    "query": "image generation with diffusion models",
+    "relevance": { "p029": 3, "p028": 2, "p031": 1 }
+  },
+  {
+    "id": "q09",
+    "query": "attention mechanism for sequence to sequence translation",
+    "relevance": { "p012": 3, "p018": 3, "p049": 1, "p048": 1 }
+  },
+  {
+    "id": "q10",
+    "query": "gradient boosting for ranking",
+    "relevance": { "p035": 3, "p006": 3, "p036": 1 }
+  },
+  {
+    "id": "q11",
+    "query": "query expansion with relevance feedback",
+    "relevance": { "p007": 3, "p003": 2, "p001": 1 }
+  },
+  {
+    "id": "q12",
+    "query": "Chinese word segmentation",
+    "relevance": { "p021": 3 }
+  },
+  {
+    "id": "q13",
+    "query": "attention",
+    "relevance": { "p018": 3, "p012": 3, "p048": 2, "p049": 2, "p026": 1, "p013": 1 }
+  },
+  {
+    "id": "q14",
+    "query": "representation learning",
+    "relevance": { "p039": 3, "p037": 3, "p019": 2, "p010": 2, "p014": 2 }
+  },
+  {
+    "id": "q15",
+    "query": "graph",
+    "relevance": { "p009": 3, "p040": 3, "p008": 2, "p044": 1 }
+  },
+  {
+    "id": "q16",
+    "query": "memory",
+    "relevance": { "p047": 3, "p048": 2, "p022": 2, "p042": 1 }
+  },
+  {
+    "id": "q17",
+    "query": "efficient",
+    "relevance": { "p049": 3, "p047": 3, "p048": 3, "p005": 2, "p041": 1 }
+  },
+  {
+    "id": "q18",
+    "query": "segmentation",
+    "relevance": { "p027": 3, "p030": 3, "p021": 3, "p026": 1 }
+  },
+  {
+    "id": "q19",
+    "query": "translation",
+    "relevance": { "p012": 3, "p018": 3, "p017": 2, "p049": 1 }
+  }
+]
