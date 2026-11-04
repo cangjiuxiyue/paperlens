@@ -24,7 +24,7 @@
 ## 2. 快速开始
 
 ```bash
-npm install          # 只装 TypeScript，运行时零依赖
+npm install          # 只装 TypeScript，运行时零依赖npm install # 仅安装 TypeScript，运行时无依赖
 npm start            # 编译并启动，打开 http://localhost:5178
 ```
 
